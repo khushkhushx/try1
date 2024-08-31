@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Budgeting App</title>
+    <style>
+        /* Basic styling */
+    </style>
+</head>
+<body>
+
+<h1>Personal Budgeting App</h1>
+
+<form id="budgetForm">
+    <h3>Choose an Expense:</h3>
+    <input type="radio" id="timhortons" name="expense" value="Tim Hortons">
+    <label for="timhortons">Tim Hortons</label><br>
+
+    <input type="radio" id="ubereats" name="expense" value="Uber Eats">
+    <label for="ubereats">Uber Eats</label><br>
+
+    <input type="radio" id="subway" name="expense" value="Subway">
+    <label for="subway">Subway</label><br>
+
+    <input type="radio" id="petro" name="expense" value="Petro">
+    <label for="petro">Petro</label><br>
+
+    <input type="radio" id="indianstore" name="expense" value="Indian Store">
+    <label for="indianstore">Indian Store</label><br>
+
+    <!-- Input type to add new expense -->
+    <input type="text" id="newExpense" placeholder="Add New Expense">
+    <button type="button" onclick="addNewExpense()">Add</button><br><br>
+
+    <!-- Calendar -->
+    <label for="date">Select Date:</label>
+    <input type="date" id="date"><br><br>
+
+    <!-- Multiline text area -->
+    <label for="amount">Enter Amount:</label><br>
+    <textarea id="amount" rows="5" cols="30"></textarea><br><br>
+
+    <!-- GO Button -->
+    <button type="button" onclick="submitBudget()">GO</button>
+</form>
+
+<h3>Budget Summary (editable):</h3>
+<textarea id="budgetEditor" rows="10" cols="50"></textarea><br>
+<button type="button" onclick="updateBudgetFile()">Update</button>
+
+<script>
+    // JavaScript functions for dynamic functionality
+    function addNewExpense() {
+        // Code to add new expense radio button
+    }
+
+    function submitBudget() {
+        // Code to handle submission and update of budget.txt
+    }
+
+    function updateBudgetFile() {
+        // Code to update the file from budgetEditor
+    }
+</script>
+
+</body>
+</html>
